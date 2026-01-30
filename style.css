@@ -1,0 +1,21 @@
+body {
+    overflow: hidden;
+    position: relative;
+    background-color: #a0ccff;
+}
+
+.image-aleatoire {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Assure que le bouton reste toujours au premier plan */
+#monBouton {
+    position: relative; /* nécessaire pour que z-index soit pris en compte */
+    z-index: 9999;
+    width: 34vh;
+    height: auto;
+}
